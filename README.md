@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: [https://main--universal-editor-getting-started--samriddhirai25.aem.page/](https://main--universal-editor-getting-started--samriddhirai25.aem.page/)
-- Live: [https://main--universal-editor-getting-started--samriddhirai25.aem.live/](https://main--universal-editor-getting-started--samriddhirai25.aem.live/)
+- Preview: [https://main--universal-editor-getting-started--samriddhirai25.aem.page/](https://main--samriddhi-eds--samriddhirai25.aem.page/)
+- Live: [https://main--universal-editor-getting-started--samriddhirai25.aem.live/](https://main--samriddhi-eds--samriddhirai25.aem.live/)
 
 ## Documentation
 
