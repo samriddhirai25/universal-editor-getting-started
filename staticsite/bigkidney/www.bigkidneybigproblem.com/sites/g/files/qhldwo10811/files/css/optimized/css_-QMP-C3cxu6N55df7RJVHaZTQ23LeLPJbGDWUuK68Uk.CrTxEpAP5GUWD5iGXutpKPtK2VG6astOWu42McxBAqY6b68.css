@@ -1,0 +1,719 @@
+/**
+:root {
+  --main-bg-color: $otsuka-color-ink;
+  --Otsuka_Blue: $otsuka-color-blue;
+  --Otsuka_Light_Blue: $otsuka-color-light-blue;
+  --Otsuka_Ink: $otsuka-color-ink;
+  --Otsuka_Ink_Tint: $otsuka-color-ink-tint;
+  --Otsuka_Red: $otsuka-color-red;
+  --Otsuka_White: $otsuka-color-white;
+  --Rexulti_Deep_Green: $otsuka-rexulti-color-deep-green;
+}
+*/
+.bg-white * {
+  color: #ffffff;
+}
+
+.bg-black * {
+  color: #373d42;
+}
+
+/* SCSS */
+/**
+:root {
+  --main-bg-color: $otsuka-color-ink;
+  --Otsuka_Blue: $otsuka-color-blue;
+  --Otsuka_Light_Blue: $otsuka-color-light-blue;
+  --Otsuka_Ink: $otsuka-color-ink;
+  --Otsuka_Ink_Tint: $otsuka-color-ink-tint;
+  --Otsuka_Red: $otsuka-color-red;
+  --Otsuka_White: $otsuka-color-white;
+  --Rexulti_Deep_Green: $otsuka-rexulti-color-deep-green;
+}
+*/
+.bg-white * {
+  color: #ffffff;
+}
+
+.bg-black * {
+  color: #373d42;
+}
+
+/* SCSS */
+/**
+:root {
+  --main-bg-color: $otsuka-color-ink;
+  --Otsuka_Blue: $otsuka-color-blue;
+  --Otsuka_Light_Blue: $otsuka-color-light-blue;
+  --Otsuka_Ink: $otsuka-color-ink;
+  --Otsuka_Ink_Tint: $otsuka-color-ink-tint;
+  --Otsuka_Red: $otsuka-color-red;
+  --Otsuka_White: $otsuka-color-white;
+  --Rexulti_Deep_Green: $otsuka-rexulti-color-deep-green;
+}
+*/
+.bg-white * {
+  color: #ffffff;
+}
+
+.bg-black * {
+  color: #373d42;
+}
+
+/* SCSS */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #333333;
+  overflow: auto !important;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #333333;
+}
+
+.desktop-up {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .desktop-up {
+    display: inherit;
+  }
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+.heading-1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+@media (min-width: 1200px) {
+  .heading-1 {
+    font-size: 40px;
+    line-height: 1.38;
+  }
+}
+
+.heading-2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+@media (min-width: 1200px) {
+  .heading-2 {
+    font-size: 26px;
+    line-height: 1.38;
+  }
+}
+
+.heading-3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+@media (min-width: 1200px) {
+  .heading-3 {
+    font-size: 22px;
+    line-height: 1.38;
+  }
+}
+
+.heading-4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+@media (min-width: 1200px) {
+  .heading-4 {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+}
+
+.heading-5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+@media (min-width: 1200px) {
+  .heading-5 {
+    font-size: 16px;
+    line-height: 1.38;
+  }
+}
+
+.heading-6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+@media (min-width: 1200px) {
+  .heading-6 {
+    font-size: 14px;
+    line-height: 1.38;
+  }
+}
+
+/**
+:root {
+  --main-bg-color: $otsuka-color-ink;
+  --Otsuka_Blue: $otsuka-color-blue;
+  --Otsuka_Light_Blue: $otsuka-color-light-blue;
+  --Otsuka_Ink: $otsuka-color-ink;
+  --Otsuka_Ink_Tint: $otsuka-color-ink-tint;
+  --Otsuka_Red: $otsuka-color-red;
+  --Otsuka_White: $otsuka-color-white;
+  --Rexulti_Deep_Green: $otsuka-rexulti-color-deep-green;
+}
+*/
+.bg-white * {
+  color: #ffffff;
+}
+
+.bg-black * {
+  color: #373d42;
+}
+
+/* SCSS */
+/**
+:root {
+  --main-bg-color: $otsuka-color-ink;
+  --Otsuka_Blue: $otsuka-color-blue;
+  --Otsuka_Light_Blue: $otsuka-color-light-blue;
+  --Otsuka_Ink: $otsuka-color-ink;
+  --Otsuka_Ink_Tint: $otsuka-color-ink-tint;
+  --Otsuka_Red: $otsuka-color-red;
+  --Otsuka_White: $otsuka-color-white;
+  --Rexulti_Deep_Green: $otsuka-rexulti-color-deep-green;
+}
+*/
+.bg-white * {
+  color: #ffffff;
+}
+
+.bg-black * {
+  color: #373d42;
+}
+
+/* SCSS */
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-25 {
+  margin-top: 25px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mt-35 {
+  margin-top: 35px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mt-40-25 {
+  margin-top: 25px !important;
+}
+
+@media (min-width: 1200px) {
+  .mt-40-25 {
+    margin-top: 40px !important;
+  }
+}
+
+.mt-45 {
+  margin-top: 45px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-16-26 {
+  margin-top: 16px !important;
+}
+
+@media (min-width: 992px) {
+  .mt-16-26 {
+    margin-top: 26px !important;
+  }
+}
+
+.mt-40-50 {
+  margin-top: 40px !important;
+}
+
+@media (min-width: 992px) {
+  .mt-40-50 {
+    margin-top: 50px !important;
+  }
+}
+
+.mt-15-40 {
+  margin-top: 15px !important;
+}
+
+@media (min-width: 1200px) {
+  .mt-15-40 {
+    margin-top: 40px !important;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-35 {
+  margin-bottom: 35px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-40-25 {
+  margin-bottom: 25px !important;
+}
+
+@media (min-width: 1200px) {
+  .mb-40-25 {
+    margin-bottom: 40px !important;
+  }
+}
+
+.mb-45 {
+  margin-bottom: 45px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mb-16-26 {
+  margin-bottom: 16px !important;
+}
+
+@media (min-width: 992px) {
+  .mb-16-26 {
+    margin-bottom: 26px !important;
+  }
+}
+
+.mb-20-30 {
+  margin-bottom: 20px !important;
+}
+
+@media (min-width: 992px) {
+  .mb-20-30 {
+    margin-bottom: 30px !important;
+  }
+}
+
+.mb-40-50 {
+  margin-bottom: 40px !important;
+}
+
+@media (min-width: 992px) {
+  .mb-40-50 {
+    margin-bottom: 50px !important;
+  }
+}
+
+.mb-15-40 {
+  margin-bottom: 15px !important;
+}
+
+@media (min-width: 1200px) {
+  .mb-15-40 {
+    margin-bottom: 40px !important;
+  }
+}
+
+.pl-5 {
+  padding-left: 5px !important;
+}
+
+.pr-5 {
+  padding-right: 5px !important;
+}
+
+.pl-10 {
+  padding-left: 10px !important;
+}
+
+.pr-10 {
+  padding-right: 10px !important;
+}
+
+.footnote {
+  font-size: 12px;
+}
+
+.otsuka-jynarque-hcp-font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.otsuka-jynarque-hcp-font-weight-semi-bold {
+  font-weight: 600 !important;
+}
+
+.otsuka-jynarque-hcp-font-weight-regular {
+  font-weight: 400 !important;
+}
+
+.otsuka-jynarque-hcp-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.otsuka-jynarque-hcp-text-red-border-top-border-title {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.otsuka-jynarque-hcp-text-red-border-top-border-title::after {
+  content: '';
+  width: 98px;
+  height: 3px;
+  position: absolute;
+  bottom: -8px;
+  left: -5px;
+  background-color: #ff5b48;
+}
+
+@media (min-width: 1200px) {
+  .otsuka-jynarque-hcp-text-red-border-top-border-title {
+    font-size: 22px;
+    line-height: 1.32;
+  }
+}
+
+.otsuka-jynarque-hcp-text-green-border-top-border-title {
+  background-color: #9ae51a;
+  border: 4px solid #9ae51a;
+  position: relative;
+  padding: 14px 24px;
+  margin: 0 auto;
+  max-width: 682px;
+  line-height: 1.25;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .otsuka-jynarque-hcp-text-green-border-top-border-title {
+    line-height: 1.22;
+  }
+}
+
+.otsuka-jynarque-hcp-text-green-border-top-border-title::before {
+  content: '';
+  position: absolute;
+  top: -41px;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-bottom: 37px solid #333333;
+  border-left: 50px solid transparent;
+}
+
+.otsuka-jynarque-hcp-text-small {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 1200px) {
+  .otsuka-jynarque-hcp-text-small {
+    font-size: 16px;
+    line-height: 1.38;
+  }
+}
+
+.otsuka-jynarque-hcp-block-title {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: -0.22px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .otsuka-jynarque-hcp-block-title {
+    font-size: 32px;
+    line-height: 1.19;
+    letter-spacing: normal;
+  }
+}
+
+.otsuka-jynarque-hcp-block-sub-title {
+  font-size: 22px;
+  line-height: 1.45;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.22px;
+}
+
+@media (min-width: 1200px) {
+  .otsuka-jynarque-hcp-block-sub-title {
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: normal;
+  }
+}
+
+.otsuka-jynarque-hcp-block-sub-title-medium {
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+  .otsuka-jynarque-hcp-block-sub-title-medium {
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+.otsuka-jynarque-hcp-block-sub-title-small {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+}
+
+@media (min-width: 1200px) {
+  .otsuka-jynarque-hcp-block-sub-title-small {
+    font-size: 22px;
+    line-height: 1.18;
+  }
+}
+
+.otsuka-jynarque-hcp-title-border-bottom {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 1200px) {
+  .otsuka-jynarque-hcp-title-border-bottom {
+    margin-bottom: 70px;
+  }
+}
+
+.otsuka-jynarque-hcp-title-border-bottom::after {
+  background-color: #9ae51a;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  margin: 0 auto;
+  max-width: 586px;
+  height: 3px;
+  width: calc(100% - 40px);
+}
+
+@media (min-width: 1200px) {
+  .otsuka-jynarque-hcp-title-border-bottom::after {
+    height: 5px;
+    bottom: -20px;
+    width: 586px;
+  }
+}
+
+.otsuka-jynarque-hcp-block-popup-title {
+  font-size: 20px !important;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+@media (min-width: 992px) {
+  .otsuka-jynarque-hcp-block-popup-title {
+    font-size: 32px !important;
+    line-height: 1.19;
+  }
+
+  .otsuka-jynarque-hcp-block-popup-title sup {
+    font-size: 20px;
+  }
+}
+
+.otsuka-jynarque-hcp-block-popup-sub-title {
+  font-size: 18px !important;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+}
+
+.otsuka-jynarque-hcp-block-popup-sub-title a {
+  font-size: 18px !important;
+  line-height: 1.39;
+}
+
+@media (min-width: 992px) {
+  .otsuka-jynarque-hcp-block-popup-sub-title {
+    font-size: 24px !important;
+    line-height: 1.21;
+  }
+
+  .otsuka-jynarque-hcp-block-popup-sub-title a {
+    font-size: 24px !important;
+    line-height: 1.21;
+  }
+}
+
+.otsuka-jynarque-hcp-block-popup-text-small {
+  font-size: 12px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 2;
+}
+
+@media (min-width: 992px) {
+  .otsuka-jynarque-hcp-block-popup-text-small {
+    font-size: 14px !important;
+    line-height: 1.71;
+  }
+}
+
+.otsuka-jynarque-hcp-color-white {
+  color: #ffffff;
+}
+
+.otsuka-jynarque-hcp-color-light-green {
+  color: #9ae51a;
+}
+
+.otsuka-jynarque-hcp-color-red {
+  color: #ff5b48;
+}
+
+.otsuka-jynarque-hcp-color-dark-gray {
+  color: #333333;
+}
+
+#back-to-top {
+  display: none;
+}
+
+body {
+  background: #333333;
+}
+
+.nav-tabs .nav-link {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=global.css.map */

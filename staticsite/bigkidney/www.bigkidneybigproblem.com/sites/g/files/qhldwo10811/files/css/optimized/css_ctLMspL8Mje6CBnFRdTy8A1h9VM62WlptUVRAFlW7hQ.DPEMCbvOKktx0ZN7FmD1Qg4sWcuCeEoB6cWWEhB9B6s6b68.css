@@ -1,0 +1,91 @@
+div.paragraph.custom-image-position-top,
+div.paragraph.custom-image-position-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+div.paragraph.custom-image-position-left,
+div.paragraph.custom-image-position-right {
+  display: flex;
+}
+
+.paragraph--type--text.paragraph .left-column {
+  width: 50%;
+}
+
+.paragraph--type--text.paragraph .right-column {
+  width: 50%;
+}
+
+.custom-image-position-top.paragraph.paragraph--type--text {
+  clear: both;
+}
+
+.custom-image-position-top.paragraph.paragraph--type--text .field--name-field-media-image {
+
+}
+
+@media (min-width: 768px) {
+  .paragraph--type--text.classy-1-2-columns-text, .custom-text-type-2-columns {
+    column-count: 2;
+  }
+
+  .custom-text-type-3-columns {
+    column-count: 3;
+  }
+}
+
+/*Quote text*/
+.custom-text-type-quote .field--type-text-long,
+.custom-text-type-quote .text-formatted {
+  position: relative;
+}
+
+.custom-text-type-quote .field--type-text-long p,
+.custom-text-type-quote .text-formatted p {
+  font-family: "Whitman Roman", serif;
+  font-style: normal;
+  font-size: 1.45rem;
+  line-height: inherit;
+  letter-spacing: 0.1px;
+}
+
+@media (min-width: 1200px) {
+  .custom-text-type-quote .field--type-text-long p,
+  .custom-text-type-quote .text-formatted p {
+    font-size: 3.25rem;
+    line-height: 1.19;
+    letter-spacing: -0.6px;
+  }
+}
+
+.custom-text-type-quote .field--type-text-long p em,
+.custom-text-type-quote .text-formatted p em {
+  font-style: normal;
+}
+
+.custom-text-type-quote .field--type-text-long p:before,
+.custom-text-type-quote .text-formatted p:before {
+  content: '\201c';
+  position: absolute;
+  margin-left: -14px;
+}
+
+@media (min-width: 1200px) {
+  .custom-text-type-quote .field--type-text-long p:before,
+  .custom-text-type-quote .text-formatted p:before {
+    margin-left: -31px;
+  }
+}
+
+.custom-text-type-quote .field--type-text-long p:after,
+.custom-text-type-quote .text-formatted p:after {
+  content: '\201d';
+  position: absolute;
+}
+
+.custom-text-type-quote .field--type-text-long::before, .custom-text-type-quote .text-formatted::before,
+.custom-text-type-quote .field--type-text-long::before, .custom-text-type-quote .text-formatted::after {
+  display: none;
+}
+

@@ -1,0 +1,20 @@
+body.user-is-tabbing *:focus {
+  outline-style: solid;
+  outline-color: -webkit-focus-ring-color;
+  outline-width: 1px;
+  box-shadow: 0 0 10px 0 #fff;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  body.user-is-tabbing *:focus {
+    outline-style: none;
+    box-shadow: none;
+  }
+}
+
+body.user-is-clicking *:focus {
+  outline-style: none !important;
+  box-shadow: none !important;
+}
+
+/*# sourceMappingURL=focus.css.map */

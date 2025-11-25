@@ -1,0 +1,94 @@
+/**
+:root {
+  --main-bg-color: $otsuka-color-ink;
+  --Otsuka_Blue: $otsuka-color-blue;
+  --Otsuka_Light_Blue: $otsuka-color-light-blue;
+  --Otsuka_Ink: $otsuka-color-ink;
+  --Otsuka_Ink_Tint: $otsuka-color-ink-tint;
+  --Otsuka_Red: $otsuka-color-red;
+  --Otsuka_White: $otsuka-color-white;
+  --Rexulti_Deep_Green: $otsuka-rexulti-color-deep-green;
+}
+*/
+.bg-white * {
+  color: #ffffff;
+}
+
+.bg-black * {
+  color: #373d42;
+}
+
+/* SCSS */
+#main main {
+  width: 100%;
+}
+
+#main main .page-content-main-content-wrapper {
+  position: relative;
+}
+
+#main main .page-content-main-content-wrapper nav.tabs {
+  position: absolute;
+  top: 705px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.path-frontpage .node-content-wrapper {
+  margin-top: 0;
+}
+
+.path-frontpage.user-logged-in .node-content-wrapper {
+  margin-top: 60px;
+}
+
+@media (min-width: 1200px) {
+  .path-frontpage .paragraph.paragraph--type--wrapper:not(.otsuka-section-chart-inline-block-popup):not(.otsuka-section-chart-image-block-popup),
+  .path-frontpage .des-container,
+  .path-frontpage .site-footer {
+    position: relative;
+  }
+
+  .path-frontpage .paragraph.paragraph--type--wrapper:not(.otsuka-section-chart-inline-block-popup):not(.otsuka-section-chart-image-block-popup)::after,
+  .path-frontpage .des-container::after,
+  .path-frontpage .site-footer::after {
+    background: url(../../../themes/site/themes/custom/otsuka_disease_microsite_theme/assets/build/img/page-ruler.png) repeat-y;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60px;
+  }
+}
+
+body.page-404, body.page-node-6 {
+  background: #333333;
+}
+
+body.page-404 div#main-wrapper, body.page-node-6 div#main-wrapper {
+  height: calc(100vh - 103px);
+}
+
+p.otsuka-jynarque-hcp-title-border-bottom::after {
+  width: 100%;
+}
+
+#block-tkv-measurement-techniques-block-popup {
+  display: none;
+}
+
+#block-the-mayo-imaging-classification-first-popup-block {
+  display: none;
+}
+
+#block-the-mayo-imaging-classification-second-popup-block {
+  display: none;
+}
+
+#block-the-mayo-imaging-classification-third-popup-block {
+  display: none;
+}
+
+/*# sourceMappingURL=otsuka.page.css.map */

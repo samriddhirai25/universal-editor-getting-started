@@ -1,0 +1,134 @@
+/**
+:root {
+  --main-bg-color: $otsuka-color-ink;
+  --Otsuka_Blue: $otsuka-color-blue;
+  --Otsuka_Light_Blue: $otsuka-color-light-blue;
+  --Otsuka_Ink: $otsuka-color-ink;
+  --Otsuka_Ink_Tint: $otsuka-color-ink-tint;
+  --Otsuka_Red: $otsuka-color-red;
+  --Otsuka_White: $otsuka-color-white;
+  --Rexulti_Deep_Green: $otsuka-rexulti-color-deep-green;
+}
+*/
+.bg-white * {
+  color: #ffffff;
+}
+
+.bg-black * {
+  color: #373d42;
+}
+
+/* SCSS */
+footer.site-footer {
+  background-color: #9ae51a;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  padding: 40px 0 50px 0;
+  z-index: 1;
+}
+
+footer.site-footer .block {
+  border: none;
+  margin: 0;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  footer.site-footer {
+    padding: 40px 0;
+  }
+}
+
+footer.site-footer .block-otsuka-updated-prc-code-info-block p, footer.site-footer .block-otsuka-updated-prc-code-info-block span,
+footer.site-footer #block-footer-copyright-block p,
+footer.site-footer #block-footer-copyright-block span {
+  color: #000000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 2.86;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  footer.site-footer .block-otsuka-updated-prc-code-info-block p, footer.site-footer .block-otsuka-updated-prc-code-info-block span,
+  footer.site-footer #block-footer-copyright-block p,
+  footer.site-footer #block-footer-copyright-block span {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+footer.site-footer #block-footer-copyright-block .field--name-body {
+  padding-left: 0;
+}
+
+footer.site-footer .block-copyright-main-wrapper {
+  display: block;
+}
+
+footer.site-footer .block-copyright-main-wrapper p {
+  width: 100%;
+}
+
+footer.site-footer .block-copyright-main-wrapper #data-copyright-year {
+  letter-spacing: -0.5px;
+}
+
+@media (min-width: 768px) {
+  footer.site-footer .block-copyright-main-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer.site-footer .block-copyright-main-wrapper p {
+    width: auto;
+  }
+
+  footer.site-footer .block-copyright-main-wrapper #data-copyright-year {
+    letter-spacing: normal;
+  }
+}
+
+@media (min-width: 992px) {
+  footer.site-footer .block-copyright-main-wrapper .block-copyright-all-rights-reserved {
+    margin-right: 30px;
+  }
+}
+
+footer.site-footer .block-otsuka-updated-prc-code-info-block .prc-info-prefix {
+  display: none;
+}
+
+footer.site-footer .block-otsuka-updated-prc-code-info-block .prc-code {
+  color: #000000;
+}
+
+footer.site-footer .block-otsuka-updated-prc-code-info-block .prc-code span {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  footer.site-footer .block-otsuka-updated-prc-code-info-block .prc-code span {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  footer.site-footer .block-otsuka-updated-prc-code-info-block .prc-code {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+footer.site-footer .region-footer-right {
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  footer.site-footer .region-footer-right {
+    flex-direction: row-reverse;
+  }
+}
+
+/*# sourceMappingURL=otsuka.footer.css.map */

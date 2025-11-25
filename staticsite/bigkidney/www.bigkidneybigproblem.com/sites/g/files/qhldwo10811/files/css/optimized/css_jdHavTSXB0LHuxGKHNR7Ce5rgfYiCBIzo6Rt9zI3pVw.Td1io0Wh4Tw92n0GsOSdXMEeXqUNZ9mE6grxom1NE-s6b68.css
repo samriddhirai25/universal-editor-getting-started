@@ -1,0 +1,508 @@
+@charset "UTF-8";
+/**
+:root {
+  --main-bg-color: $otsuka-color-ink;
+  --Otsuka_Blue: $otsuka-color-blue;
+  --Otsuka_Light_Blue: $otsuka-color-light-blue;
+  --Otsuka_Ink: $otsuka-color-ink;
+  --Otsuka_Ink_Tint: $otsuka-color-ink-tint;
+  --Otsuka_Red: $otsuka-color-red;
+  --Otsuka_White: $otsuka-color-white;
+  --Rexulti_Deep_Green: $otsuka-rexulti-color-deep-green;
+}
+*/
+.bg-white * {
+  color: #ffffff;
+}
+
+.bg-black * {
+  color: #373d42;
+}
+
+.popover-wrapper button.popover-trigger {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.popover-wrapper .popover-trigger {
+  cursor: pointer;
+  display: flex;
+}
+
+.popover-wrapper .popover-trigger .field--type-entity-reference {
+  display: inline-block;
+  margin: 0;
+}
+
+.popover-wrapper .popover-trigger .field--type-image {
+  margin: 0;
+}
+
+.popover-wrapper .popover-trigger img {
+  padding: 0;
+  margin: 0;
+}
+
+.popover-wrapper .popover-content {
+  display: none;
+}
+
+.popover .popover-body {
+  display: block;
+}
+
+.popover .popover-body .container {
+  padding: 0;
+}
+
+.popover .popover-body .text-formatted p:last-child {
+  margin-bottom: 0;
+}
+
+body .popover-wrapper button.popover-trigger {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  overflow: hidden;
+}
+
+body .popover-wrapper button.popover-trigger img {
+  width: 74px;
+  height: 37px;
+  object-fit: cover;
+  object-position: left top;
+}
+
+body .popover-wrapper button.popover-trigger[aria-describedby] img {
+  object-position: right top;
+}
+
+body .popover {
+  z-index: 9;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  width: 265px;
+  height: 84px;
+}
+
+body .popover .popover-body {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 265px;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 1.22;
+  z-index: 2;
+}
+
+body .popover .popover-body-inner {
+  border: 3px solid #9ae51a;
+  padding: 11px;
+  background: #ffffff;
+}
+
+body .popover .popover-body-inner ul, body .popover .popover-body-inner ol {
+  padding-left: 19px;
+  line-height: 1.33;
+}
+
+body .popover button.close-popover {
+  font-size: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 3;
+}
+
+body .popover button.close-popover::before, body .popover button.close-popover::after {
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 5px;
+  display: block;
+  height: 2px;
+  width: 35px;
+  background: #EAF0F4;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+body .popover button.close-popover::after {
+  transform: rotate(-45deg);
+}
+
+body .popover button.close-popover:hover::before, body .popover button.close-popover:hover::after {
+  background: #dde2e5;
+}
+
+@media all and (max-width: 991px) {
+  body .popover button.close-popover {
+    top: unset;
+    right: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  body .popover button.close-popover::before, body .popover button.close-popover::after {
+    top: 15px;
+    left: 5px;
+    width: 21px;
+  }
+}
+
+body .popover .arrow {
+  width: 84px;
+  height: 42px;
+  background: url(../../../themes/site/themes/custom/otsuka_disease_microsite_theme/assets/build/img/popover-left.svg) no-repeat left center transparent;
+  background-size: contain;
+  margin: 0;
+  z-index: 1;
+}
+
+body .popover .arrow::before, body .popover .arrow::after {
+  display: none;
+}
+
+body .popover.bs-popover-top {
+  margin-bottom: 42px;
+}
+
+body .popover.bs-popover-top .popover-body {
+  bottom: -18.5px;
+}
+
+body .popover.bs-popover-top > .arrow {
+  bottom: calc(-42px + 3px - 18.5px);
+}
+
+body .popover.bs-popover-bottom {
+  margin-top: 42px;
+}
+
+body .popover.bs-popover-bottom .popover-body {
+  top: -18.5px;
+  bottom: auto;
+}
+
+body .popover.bs-popover-bottom > .arrow {
+  background-image: url(../../../themes/site/themes/custom/otsuka_disease_microsite_theme/assets/build/img/popover-right.svg);
+  background-position: right center;
+  transform: rotate(180deg);
+  top: calc(-42px + 3px - 18.5px);
+}
+
+body .popover.bs-popover-right {
+  margin-left: 42px;
+}
+
+body .popover.bs-popover-right .popover-body {
+  right: auto;
+  left: -18.5px;
+}
+
+body .popover.bs-popover-right > .arrow {
+  background-image: url(../../../themes/site/themes/custom/otsuka_disease_microsite_theme/assets/build/img/popover-right.svg);
+  background-position: right center;
+  transform: rotate(90deg);
+  left: calc(-63px + 1px - 18.5px);
+}
+
+body .popover.bs-popover-left {
+  margin-right: 42px;
+}
+
+body .popover.bs-popover-left .popover-body {
+  right: -18.5px;
+}
+
+body .popover.bs-popover-left > .arrow {
+  transform: rotate(-90deg);
+  right: calc(-63px + 1px - 18.5px);
+}
+
+@media all and (max-width: 991px) {
+  body .popover {
+    height: 28px;
+  }
+
+  body .popover .popover-body {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  body .popover .popover-body-inner {
+    position: relative;
+    padding: 5px;
+  }
+
+  body .popover .popover-body-inner.big {
+    padding: 14px;
+  }
+
+  body .popover .popover-body-inner.big .otsuka-jynarque-hcp-block-popup-title {
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+
+  body .popover .popover-body-inner.big .otsuka-jynarque-hcp-block-popup-sub-title {
+    font-size: 18px !important;
+    margin-bottom: 0;
+  }
+
+  body .popover .popover-body-inner.big p {
+    margin-bottom: 5px;
+  }
+
+  body .popover .popover-body-inner.big ul, body .popover .popover-body-inner.big ol {
+    margin-top: 5px;
+    padding-left: 13px;
+  }
+
+  body .popover .popover-body-inner.big ul li, body .popover .popover-body-inner.big ol li {
+    margin-bottom: 5px;
+  }
+
+  body .popover .close-popover {
+    top: unset;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background-size: 25px 25px;
+  }
+
+  body .popover .arrow {
+    width: 28px;
+    height: 14px;
+  }
+
+  body .popover.bs-popover-top {
+    margin-bottom: 14px;
+  }
+
+  body .popover.bs-popover-top > .arrow {
+    bottom: calc(-14px + 3px - 18.5px);
+  }
+
+  body .popover.bs-popover-bottom {
+    margin-top: 14px;
+  }
+
+  body .popover.bs-popover-bottom > .arrow {
+    top: calc(-14px + 3px - 18.5px);
+  }
+
+  body .popover.bs-popover-right {
+    margin-left: 14px;
+  }
+
+  body .popover.bs-popover-right > .arrow {
+    left: calc(-21px + 1px - 18.5px);
+  }
+
+  body .popover.bs-popover-left {
+    margin-right: 14px;
+  }
+
+  body .popover.bs-popover-left > .arrow {
+    right: calc(-21px + 1px - 18.5px);
+  }
+}
+
+.otsuka-section-chart-inline-block-popup .paragraph {
+  margin: 0 !important;
+  width: auto;
+}
+
+.otsuka-section-chart-inline-block-popup .paragraph--type--text,
+.otsuka-section-chart-inline-block-popup .popover-wrapper {
+  display: inline-block;
+}
+
+.otsuka-section-chart-inline-block-popup .paragraph--type--text p,
+.otsuka-section-chart-inline-block-popup .popover-wrapper p {
+  line-height: 37px;
+}
+
+.otsuka-section-chart-inline-block-popup .popover-wrapper {
+  position: relative;
+}
+
+.otsuka-section-chart-image-block-popup {
+  position: relative;
+  max-width: 995px;
+  margin: 0 auto;
+}
+
+.otsuka-section-chart-image-block-popup > .container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.otsuka-section-chart-image-block-popup .otsuka-section-with-chart {
+  margin-bottom: 0;
+  background: transparent;
+}
+
+.otsuka-section-chart-image-block-popup .otsuka-section-with-chart img.container {
+  padding: 0 !important;
+  border-radius: 15px 15px 0 0;
+  background: #ffffff;
+}
+
+.otsuka-section-chart-image-block-popup .field--type-entity-reference {
+  margin: 0 !important;
+}
+
+.otsuka-section-with-chart {
+  margin: 0 auto 36px;
+  max-width: 995px;
+  background: #ffffff;
+}
+
+.otsuka-section-with-chart.mt-4 {
+  margin-top: 0 !important;
+}
+
+.otsuka-section-with-chart .text-formatted {
+  margin: 0 auto;
+  max-width: 850px;
+  padding-bottom: 50px;
+}
+
+.otsuka-section-with-chart .text-formatted p {
+  position: relative;
+  font-size: 16px;
+  color: #333333 !important;
+}
+
+.otsuka-section-with-chart .text-formatted p:nth-child(2)::before {
+  content: '¶';
+  position: absolute;
+  left: -0.6em;
+  top: 0;
+  font-size: 70%;
+}
+
+@media all and (max-width: 767px) {
+  .otsuka-section-with-chart .text-formatted {
+    padding-bottom: 30px;
+  }
+
+  .otsuka-section-with-chart .text-formatted p {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+
+#popover-347,
+#popover-348,
+#popover-349 {
+  position: absolute;
+  left: calc(50.8% - 18.5px);
+}
+
+#popover-347 {
+  top: calc(27% - 18.5px);
+}
+
+#popover-348 {
+  top: calc(42.8% - 18.5px);
+}
+
+#popover-349 {
+  top: calc(50.3% - 18.5px);
+}
+
+.popover-344-body {
+  width: 365px;
+}
+
+@media all and (min-width: 992px) {
+  .popover-347-body {
+    width: 286px;
+  }
+
+  .popover-348-body {
+    width: 389px;
+  }
+
+  .popover-349-body {
+    width: 284px;
+  }
+
+  .popover-344-body {
+    width: 603px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  body .popover {
+    width: 400px;
+    max-width: 95%;
+  }
+
+  body .popover .popover-body {
+    left: 0;
+  }
+
+  body .popover .popover-body-inner {
+    width: 100%;
+    max-width: 80%;
+  }
+
+  body .popover .popover-347-body {
+    max-width: 206px;
+  }
+
+  body .popover .popover-348-body {
+    max-width: 258px;
+  }
+
+  body .popover .popover-349-body {
+    max-width: 269px;
+  }
+
+  body .popover .popover-344-body {
+    width: 100%;
+    max-width: 97.5%;
+  }
+}
+
+@media all and (max-width: 350px) {
+  body .popover {
+    width: 95%;
+  }
+
+  body .popover .popover-body {
+    right: unset;
+    min-width: auto;
+  }
+
+  body .popover .popover-body-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body .popover .popover-347-body,
+  body .popover .popover-348-body,
+  body .popover .popover-349-body,
+  body .popover .popover-344-body {
+    width: 100%;
+    max-width: 99%;
+  }
+}
+
+/*# sourceMappingURL=popover.css.map */
