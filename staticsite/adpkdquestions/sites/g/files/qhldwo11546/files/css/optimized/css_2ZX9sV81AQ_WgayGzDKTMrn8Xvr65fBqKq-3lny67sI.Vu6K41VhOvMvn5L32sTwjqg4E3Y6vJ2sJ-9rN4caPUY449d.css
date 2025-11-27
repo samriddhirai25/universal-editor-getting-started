@@ -1,0 +1,99 @@
+.cta-block-cards {
+  background-color: #ffffff;
+}
+
+.cta-block-cards .height-100 {
+  height: 100%;
+}
+
+.cta-block-cards .max-width-height {
+  max-width: 21.75rem;
+}
+
+.cta-block-cards .common-border {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.cta-block-cards .card .pain-icon {
+  background-image: url("../../../themes/site/themes/custom/otsuka_jynarque_adpkd_2021/assets/build/css/component/webp/pain_icon.html");
+  height: 5.0625rem;
+  width: 5.0625rem;
+  max-width: 5.0625rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cta-block-cards .card .graph-icon {
+  background-image: url("../../../themes/site/themes/custom/otsuka_jynarque_adpkd_2021/assets/build/css/component/webp/graph_icon.html");
+  height: 5.0625rem;
+  width: 5.0625rem;
+  max-width: 5.0625rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cta-block-cards .card .time-icon {
+  background-image: url("../../../themes/site/themes/custom/otsuka_jynarque_adpkd_2021/assets/build/css/component/webp/time_icon.html");
+  height: 5.0625rem;
+  width: 5.0625rem;
+  max-width: 5.0625rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cta-block-cards .card .card-title h1 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.cta-block-cards .card .card-title h2 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.cta-block-cards .card .card-title h3 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.cta-block-cards .card .card-title h4 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.cta-block-cards .card .card-title h5 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.cta-block-cards .card .card-title h6 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.cta-block-cards .call-to-action__card.cta-with-icon img {
+  width: 100%;
+  max-width: 81px;
+  height: auto;
+  max-height: 81px;
+  margin: auto;
+}
+
+.cta-block-cards .call-to-action__card.cta-with-photo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+}
+
+.cta-block-cards .col-4 {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/*# sourceMappingURL=cta-block-cards.css.map */

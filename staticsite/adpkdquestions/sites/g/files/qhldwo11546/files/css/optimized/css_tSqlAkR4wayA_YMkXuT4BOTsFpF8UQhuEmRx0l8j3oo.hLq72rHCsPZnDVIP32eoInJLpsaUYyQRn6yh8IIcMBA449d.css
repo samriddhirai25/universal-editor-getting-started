@@ -1,0 +1,102 @@
+.eu-cookie-compliance-banner {
+  padding: 10px 15px;
+  background: #9ae51a;
+  color: #000;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 24px;
+  width: 100%;
+}
+
+.eu-cookie-compliance-banner .eu-cookie-compliance-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eu-cookie-compliance-banner .eu-cookie-compliance-content .eu-cookie-compliance-message {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.eu-cookie-compliance-banner .eu-cookie-compliance-content .eu-cookie-compliance-message h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0;
+  color: #000;
+}
+
+@media (min-width: 769px) {
+  .eu-cookie-compliance-banner .eu-cookie-compliance-content .eu-cookie-compliance-message h4 + p {
+    margin-left: 1rem;
+  }
+}
+
+.eu-cookie-compliance-banner .eu-cookie-compliance-content .eu-cookie-compliance-message p {
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.eu-cookie-compliance-banner .eu-cookie-compliance-content .eu-cookie-compliance-message .eu-cookie-compliance-more-button {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.eu-cookie-compliance-banner .eu-cookie-compliance-content .eu-cookie-compliance-buttons {
+  margin: 0;
+}
+
+.eu-cookie-compliance-banner .eu-cookie-compliance-content .agree-button.eu-cookie-compliance-default-button {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  font-size: 1rem;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 5px;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+.sliding-popup-top, .sliding-popup-bottom {
+  position: static !important;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+body.eu-cookie-compliance-popup-open.scrollup .sliding-popup-top, body.eu-cookie-compliance-popup-open.scrollup .sliding-popup-bottom, body.eu-cookie-compliance-popup-open.scrolldown .sliding-popup-top, body.eu-cookie-compliance-popup-open.scrolldown .sliding-popup-bottom {
+  position: fixed !important;
+}
+
+body:not(.eu-cookie-compliance-closed) .sliding-popup-top {
+  top: 0 !important;
+}
+
+body:not(.eu-cookie-compliance-closed) .sliding-popup-bottom {
+  bottom: 0 !important;
+}
+
+.eu-cookie-compliance-popup-open footer {
+  padding-bottom: 120px;
+}
+
+@media (min-width: 769px) {
+  .eu-cookie-compliance-popup-open footer {
+    padding-bottom: 128px;
+  }
+}
+
+/*# sourceMappingURL=eu-cookie-compliance-banner.css.map */

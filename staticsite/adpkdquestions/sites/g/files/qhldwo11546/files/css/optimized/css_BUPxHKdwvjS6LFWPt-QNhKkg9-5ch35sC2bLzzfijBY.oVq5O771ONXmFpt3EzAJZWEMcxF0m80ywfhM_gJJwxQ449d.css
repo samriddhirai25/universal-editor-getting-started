@@ -1,0 +1,126 @@
+.main-content article ul {
+  padding-left: 49px;
+}
+
+.main-content article ul li {
+  list-style: none;
+  position: relative;
+  line-height: 1.33;
+  margin: 0 0 11px 0;
+}
+
+.main-content article ul li:last-child {
+  margin-bottom: 0;
+}
+
+.main-content article ul li::before {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 5px;
+  background: #ff5e4d;
+  position: absolute;
+  left: -24px;
+  top: 7px;
+}
+
+@media (max-width: 768.98px) {
+  .main-content article .diagnosis-overlooked ul {
+    padding-left: 30px;
+  }
+}
+
+.main-content article .diagnosis-overlooked ul li {
+  margin-bottom: 25px;
+}
+
+.node-type-general-purpose-page {
+  padding-bottom: 50px;
+}
+
+.node-type-general-purpose-page .node-content .body-content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.node-type-general-purpose-page .node-content .body-content .h1 {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 992px) {
+  .node-type-general-purpose-page .node-content .body-content .h1 {
+    margin-bottom: 36px;
+  }
+}
+
+.node-type-general-purpose-page .node-content .body-content .h3 {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.node-type-general-purpose-page .node-content .body-content .h3 span {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .node-type-general-purpose-page .node-content .body-content .h3 {
+    margin-top: 46px;
+    margin-bottom: 42px;
+  }
+}
+
+.node-type-general-purpose-page .node-content .body-content p {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 992px) {
+  .node-type-general-purpose-page .node-content .body-content p {
+    text-align: left;
+  }
+}
+
+.title-spacing-type-1 {
+  margin-top: 36px;
+  margin-bottom: 43px;
+}
+
+@media (min-width: 992px) {
+  .title-spacing-type-1 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+.title-16 {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 992px) {
+  .title-16 {
+    font-size: 1rem;
+  }
+}
+
+.white-bold-title .h4 {
+  color: #fff;
+  font-size: 1.5625rem;
+  line-height: 1.08;
+}
+
+@media (min-width: 992px) {
+  .white-bold-title .h4 {
+    line-height: 0.88;
+  }
+}
+
+@media (min-width: 992px) {
+  .with-side-quote {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+/*# sourceMappingURL=node.general-purpose-page.css.map */

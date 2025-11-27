@@ -1,0 +1,71 @@
+.individual-cta-row {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+}
+
+.individual-cta-row .treva-icon {
+  background-image: url("../../../themes/site/themes/custom/otsuka_jynarque_adpkd_2021/assets/build/css/component/webp/treva_crop.html");
+  height: 5.0625rem;
+  width: 5.0625rem;
+  max-width: 5.0625rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.individual-cta-row .card-title h1 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.individual-cta-row .card-title h2 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.individual-cta-row .card-title h3 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.individual-cta-row .card-title h4 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.individual-cta-row .card-title h5 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.individual-cta-row .card-title h6 {
+  font-size: 1.5rem;
+  font-family: "SourceSansPro", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 376.98px) {
+  .individual-cta-row .img-container {
+    margin-top: 1rem;
+  }
+
+  .individual-cta-row .button-container {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .individual-cta-row .img-container {
+    margin-top: 1rem;
+  }
+
+  .individual-cta-row .button-container {
+    margin-bottom: 1rem;
+  }
+}
+
+/*# sourceMappingURL=individual-cta-row.css.map */

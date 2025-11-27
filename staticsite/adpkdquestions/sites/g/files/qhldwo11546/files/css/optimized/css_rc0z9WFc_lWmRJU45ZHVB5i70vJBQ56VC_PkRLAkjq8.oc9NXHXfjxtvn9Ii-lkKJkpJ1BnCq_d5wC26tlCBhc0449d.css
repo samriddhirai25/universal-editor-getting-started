@@ -1,0 +1,24 @@
+.modal-dialog-centered {
+  min-height: 100%;
+  margin: 0 30px;
+}
+
+@media (min-width: 577px) {
+  .modal-dialog-centered {
+    margin: 0 auto;
+  }
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.modal-body {
+  font-weight: 300;
+  max-height: 70vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*# sourceMappingURL=component.modal.css.map */

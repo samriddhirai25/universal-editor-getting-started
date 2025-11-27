@@ -1,0 +1,279 @@
+.custom--importance--risk-of-progression {
+  text-align: center;
+}
+
+@media (max-width: 768.98px) {
+  .custom--importance--risk-of-progression .block-content-site-is-intended {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression .main-content article {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .custom--importance--risk-of-progression .main-content article h1 {
+    position: relative;
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression h1 {
+    text-align: left;
+  }
+}
+
+.custom--importance--risk-of-progression .paragraph--type--standard-body-copy .h1 {
+  padding-bottom: 20px;
+  margin-bottom: 18px;
+}
+
+.custom--importance--risk-of-progression .paragraph--type--standard-body-copy .h1::after {
+  content: '';
+  display: block;
+  width: 94%;
+  left: 3%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  background: #ff5e4d;
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression .paragraph--type--standard-body-copy .h1 {
+    margin-bottom: 15px;
+  }
+
+  .custom--importance--risk-of-progression .paragraph--type--standard-body-copy .h1::after {
+    width: calc(100% - 6px);
+    left: 2px;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression .paragraph--type--standard-body-copy .h1 {
+    text-align: left;
+  }
+}
+
+.custom--importance--risk-of-progression .paragraph--type--standard-body-copy .h4 {
+  margin-bottom: 35px;
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression .paragraph--type--standard-body-copy .h4 {
+    margin-bottom: 26px;
+  }
+}
+
+.custom--importance--risk-of-progression .side-by-side.custom--kidney {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression .side-by-side.custom--kidney {
+    justify-content: flex-end;
+  }
+}
+
+.custom--importance--risk-of-progression .side-by-side.custom--kidney .side-by-side--container {
+  flex-basis: auto;
+}
+
+.custom--importance--risk-of-progression .side-by-side.custom--kidney img {
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: -80px;
+  max-height: 365px;
+  width: auto;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .custom--importance--risk-of-progression .side-by-side.custom--kidney img {
+    width: 49%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression .side-by-side.custom--kidney img {
+    width: 570px;
+    max-width: none;
+    max-height: none;
+    margin-top: -70px;
+    left: 135px;
+  }
+}
+
+@media (min-width: 1310px) {
+  .custom--importance--risk-of-progression .side-by-side.custom--kidney img {
+    width: auto;
+    max-width: 100%;
+    max-height: 520px;
+    margin-top: -40px;
+    margin-left: 30px;
+    margin-bottom: -120px;
+    left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression .paragraph--type--jump-link-single {
+    display: none;
+  }
+}
+
+.custom--importance--risk-of-progression .big-green-circle-arrow {
+  margin: 33px auto 75px;
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression .big-green-circle-arrow {
+    margin: 17px 0 48px;
+  }
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .custom--importance--risk-of-progression .call-to-action-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action {
+  padding: 0 15px 30px;
+  margin: 0;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action .card {
+  background: #191919;
+  border-radius: 10px;
+  padding: 0 15px 15px;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action .card .media {
+  height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action .card .card-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 7em;
+  padding: 0 24px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.56;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action .card .card-text p {
+  margin-bottom: 0;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action .card .card-text sup, .custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action .card .card-text sub {
+  font-size: 62%;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action .media--image img {
+  width: 58px;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action:nth-child(2) .media--image img {
+  width: 70px;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action:nth-child(3) .media--image img {
+  width: 66px;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action:nth-child(4) .media--image img {
+  width: 56px;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action:nth-child(5) .media--image img {
+  width: 105px;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action:nth-child(6) .media--image img {
+  width: 90px;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action:nth-child(7) .media--image img {
+  width: 70px;
+}
+
+.custom--importance--risk-of-progression .call-to-action-wrapper .call-to-action:nth-child(8) .media--image img {
+  width: 89px;
+}
+
+.custom--importance--risk-of-progression .custom--black-back {
+  padding: 25px 0 28px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 769px) {
+  .custom--importance--risk-of-progression .custom--black-back {
+    padding-top: 39px;
+    padding-bottom: 40px;
+    margin-bottom: 80px;
+  }
+}
+
+.custom--importance--risk-of-progression .custom--black-back .h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.04;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.custom--importance--risk-of-progression .custom--red-border-block {
+  margin: 4px auto 15px;
+  max-width: 803px;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .custom--importance--risk-of-progression .custom--red-border-block {
+    margin-top: 52px;
+    margin-bottom: 41px;
+  }
+}
+
+.custom--importance--risk-of-progression .download-pdf-button .card-title {
+  max-width: 522px;
+}
+
+@media (min-width: 992px) {
+  .custom--importance--risk-of-progression .paragraph--type--sticky-sign-up-component {
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+}
+
+/*# sourceMappingURL=importance-of-kidney-size.risk-of-progression.css.map */

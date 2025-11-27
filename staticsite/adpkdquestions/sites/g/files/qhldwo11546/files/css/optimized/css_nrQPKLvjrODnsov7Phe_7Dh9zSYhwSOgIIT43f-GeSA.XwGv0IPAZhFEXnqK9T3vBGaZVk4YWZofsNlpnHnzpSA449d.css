@@ -1,0 +1,91 @@
+.paragraph--type--did-you-know-paragraph {
+  position: relative;
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto 50px auto;
+}
+
+.custom--black-back .paragraph--type--did-you-know-paragraph {
+  max-width: 640px;
+}
+
+.paragraph--type--did-you-know-paragraph .field-name-field-didyouknow-title {
+  font-size: 29px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.52;
+  letter-spacing: 0.52px;
+  display: inline-block;
+  padding: 14px 14px;
+  border: solid 3px #9ae51a;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 247px;
+  top: -26px;
+  background: #2e2d2e;
+}
+
+.custom--black-back .paragraph--type--did-you-know-paragraph .field-name-field-didyouknow-title {
+  background: #191919;
+}
+
+.paragraph--type--did-you-know-paragraph .field-name-field-didyouknow-title span {
+  color: #9ae51a;
+}
+
+.paragraph--type--did-you-know-paragraph .field-name-field-text {
+  display: inline-block;
+  border: solid 3px #9ae51a;
+  padding: 30px 30px 5px 30px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (max-width: 768.98px) {
+  .paragraph--type--did-you-know-paragraph .field-name-field-text {
+    padding: 30px 5px 5px 5px;
+  }
+}
+
+.paragraph--type--did-you-know-paragraph .field-name-field-text strong {
+  font-size: 20px;
+}
+
+.custom--black-back .paragraph--type--did-you-know-paragraph .field-name-field-text {
+  padding: 30px 14px 5px 14px;
+}
+
+.paragraph--type--did-you-know-paragraph .field-name-field-text [data-toggle="tooltip"] {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.paragraph--type--did-you-know-paragraph .field-name-field-text [data-toggle="tooltip"] .tooltip-after {
+  white-space: nowrap;
+}
+
+.paragraph--type--did-you-know-paragraph .field-name-field-text [data-toggle="tooltip"] .tooltip-after:after {
+  content: "i";
+  display: inline-block;
+  background: #ff604e;
+  width: 10px;
+  height: 10px;
+  font-size: 11px;
+  line-height: 10px;
+  position: relative;
+  top: -4px;
+  border-radius: 50%;
+  margin-left: 3px;
+  text-align: center;
+  color: #191919;
+  font-family: "SourceSansPro";
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=paragraph.did-you-know-paragraph.css.map */

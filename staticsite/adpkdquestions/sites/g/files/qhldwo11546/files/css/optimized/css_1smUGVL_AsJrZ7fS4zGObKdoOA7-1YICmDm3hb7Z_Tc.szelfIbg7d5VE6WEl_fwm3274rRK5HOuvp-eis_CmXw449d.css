@@ -1,0 +1,71 @@
+body *:focus, body .btn:focus, body .btn-primary:focus, body input[type="submit"]:focus {
+  outline: none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem rgba(89, 181, 227, 0.7);
+}
+
+body a.visually-hidden:focus,
+body .card-additional-files a:focus,
+body div[class*="eu-cookie"] button:focus {
+  outline: 0.2rem solid rgba(89, 181, 227, 0.7);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+body input[type="text"]:focus,
+body input[type="email"]:focus,
+body select:focus,
+body .custom-select:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 0.2rem rgba(89, 181, 227, 0.7);
+}
+
+body.custom--sign-up :not(.webform-submission-before-you-go-popup-form-form) input[type="radio"],
+body.custom--sign-up :not(.webform-submission-before-you-go-popup-form-form) input[type="checkbox"] {
+  position: relative;
+  z-index: 2;
+}
+
+body.custom--sign-up :not(.webform-submission-before-you-go-popup-form-form) input[type="radio"]:focus,
+body.custom--sign-up :not(.webform-submission-before-you-go-popup-form-form) input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+body.custom--sign-up :not(.webform-submission-before-you-go-popup-form-form) input[type="radio"]:focus::before,
+body.custom--sign-up :not(.webform-submission-before-you-go-popup-form-form) input[type="checkbox"]:focus::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -0.3rem;
+  right: -0.3rem;
+  bottom: -0.3rem;
+  left: -0.3rem;
+  border: 0.2rem solid rgba(89, 181, 227, 0.7);
+  z-index: 1;
+}
+
+body.custom--sign-up :not(.webform-submission-before-you-go-popup-form-form) input[type="radio"]:focus::before {
+  border-radius: 50%;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  body:not(.user-is-tabbing) *:focus {
+    outline-style: none !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  body:not(.user-is-tabbing) *:focus {
+    outline-style: none !important;
+    box-shadow: none !important;
+  }
+}
+
+body.user-is-clicking *:focus {
+  outline-style: none !important;
+  box-shadow: none !important;
+}
+
+/*# sourceMappingURL=focus.css.map */

@@ -1,0 +1,114 @@
+.custom--support--foundation-advocacy-groups {
+  text-align: center;
+}
+
+.custom--support--foundation-advocacy-groups .paragraph--type--standard-body-copy p {
+  font-size: 1rem;
+}
+
+.custom--support--foundation-advocacy-groups p i {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 992px) {
+  .custom--support--foundation-advocacy-groups {
+    text-align: left;
+  }
+
+  .custom--support--foundation-advocacy-groups p i {
+    font-size: 1rem;
+  }
+}
+
+.custom--support--foundation-advocacy-groups .h4 {
+  width: 100%;
+  text-align: center;
+}
+
+.custom--support--foundation-advocacy-groups .page-container .row {
+  justify-content: center;
+}
+
+.custom--support--foundation-advocacy-groups .page-container .row .media {
+  display: block;
+  width: 245px;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .custom--support--foundation-advocacy-groups .page-container .row .media {
+    max-width: 28.125rem;
+  }
+}
+
+.custom--support--foundation-advocacy-groups .page-container .row .card-text {
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  max-width: 23.4375rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.custom--support--foundation-advocacy-groups .page-container .row .card-text a {
+  font-weight: bold;
+}
+
+.custom--support--foundation-advocacy-groups .page-container .row .card {
+  margin-top: 2.8125rem;
+}
+
+.custom--support--foundation-advocacy-groups .page-container .row.row-1 .col-md-6 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom--support--foundation-advocacy-groups .page-container .row.row-2 .col-md-6 {
+  display: block !important;
+}
+
+.custom--support--foundation-advocacy-groups .page-container .row.row-2 .col-md-6 .media {
+  width: 245px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 769px) {
+  .custom--support--foundation-advocacy-groups .page-container .row.row-2 .col-md-6 .media {
+    height: 214px;
+    width: 372px;
+  }
+}
+
+.custom--support--foundation-advocacy-groups .page-container .row.row-2 .col-md-6:first-child .media {
+  max-width: 13.375rem;
+}
+
+.custom--support--foundation-advocacy-groups .custom--black-back {
+  margin-bottom: 2.3125rem;
+}
+
+@media (min-width: 769px) {
+  .custom--support--foundation-advocacy-groups .custom--black-back {
+    margin: 3.125rem 0;
+  }
+}
+
+.custom--support--foundation-advocacy-groups .editor--footnotes {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768.98px) {
+  .custom--support--foundation-advocacy-groups .foundation-bottom-cards.row.row-2 div:nth-child(2) .media {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=support-and-resources.foundation-advocacy-groups.css.map */

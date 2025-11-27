@@ -1,0 +1,176 @@
+.custom--about--diagnosis .body-content .h1 {
+  line-height: 1.2;
+}
+
+.custom--about--diagnosis .paragraph--type--standard-body-copy {
+  line-height: 24px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.custom--about--diagnosis .paragraph--type--standard-body-copy p span.editor--footnotes {
+  display: block;
+  margin-top: 32px;
+}
+
+.custom--about--diagnosis .paragraph--type--standard-body-copy p span.editor--footnotes.mt-45 {
+  margin-top: 45px;
+}
+
+.custom--about--diagnosis .diagnosis-symptoms--group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.custom--about--diagnosis .diagnosis-symptoms--item {
+  width: 50%;
+  flex: 50%;
+  padding: 0;
+}
+
+.custom--about--diagnosis .diagnosis-symptoms--item .ods-mb-25 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .custom--about--diagnosis .diagnosis-symptoms--item {
+    padding: 20px 0;
+    width: 16.6%;
+    flex: 16.6%;
+  }
+}
+
+.custom--about--diagnosis .diagnosis-symptoms--item .media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  width: 104px;
+  height: 104px;
+}
+
+.custom--about--diagnosis .diagnosis-symptoms--item p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+}
+
+.custom--about--diagnosis .diagnosis-symptoms--item img {
+  width: auto;
+  height: 100%;
+}
+
+.custom--about--diagnosis .paragraph--type--jump-link-single {
+  transition: .3s all;
+  position: fixed;
+  bottom: 50px;
+  margin: 0 !important;
+  z-index: 1;
+}
+
+.custom--about--diagnosis .paragraph--type--jump-link-single.scrolled {
+  transform: scale(0);
+  transform-origin: top;
+}
+
+.custom--about--diagnosis .custom--red-border-block {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+@media (min-width: 992px) {
+  .custom--about--diagnosis .custom--red-border-block {
+    margin-bottom: 35px;
+  }
+}
+
+.custom--about--diagnosis .h4 {
+  padding-bottom: 0;
+}
+
+.custom--about--diagnosis .h4 p {
+  margin-bottom: 0;
+}
+
+.custom--about--diagnosis .custom--download-pdf-button {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .custom--about--diagnosis .custom--download-pdf-button {
+    margin-bottom: 50px;
+  }
+}
+
+.custom--about--diagnosis .custom--black-back .paragraph--type--standard-body-copy {
+  max-width: none;
+}
+
+.custom--about--diagnosis .custom--black-back .paragraph--type--standard-body-copy .h3 {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .custom--about--diagnosis .custom--black-back .paragraph--type--standard-body-copy .h3 {
+    margin-top: 0;
+  }
+}
+
+.custom--about--diagnosis .custom--blackcard-options {
+  align-items: stretch;
+}
+
+@media (min-width: 992px) {
+  .custom--about--diagnosis .custom--blackcard-options .card.common-border {
+    height: 100%;
+  }
+}
+
+.custom--about--diagnosis .custom--blackcard-options .card-body {
+  min-height: 556px;
+}
+
+@media (min-width: 992px) {
+  .custom--about--diagnosis .custom--blackcard-options .card-body {
+    height: inherit;
+    min-height: 720px;
+  }
+}
+
+@media (min-width: 1310px) {
+  .custom--about--diagnosis .custom--blackcard-options .card-body {
+    min-height: 625px;
+  }
+}
+
+.custom--about--diagnosis .custom--blackcard-options .call-to-action__card .media--image img {
+  width: 103px;
+}
+
+.custom--about--diagnosis .custom--blackcard-options .call-to-action__card:nth-child(2) .media--image img {
+  width: 81px;
+}
+
+.custom--about--diagnosis .custom--blackcard-options .call-to-action__card:nth-child(3) .media--image img {
+  width: 111px;
+}
+
+.custom--about--diagnosis div.paragraph--type--sticky-sign-up-component {
+  opacity: 1;
+}
+
+.custom--about--diagnosis div.paragraph--type--sticky-sign-up-component.fixed {
+  position: relative;
+}
+
+.custom--about--diagnosis div.paragraph--type--sticky-sign-up-component.scroll-down {
+  opacity: 1 !important;
+}
+
+/*# sourceMappingURL=about.diagnosis.css.map */

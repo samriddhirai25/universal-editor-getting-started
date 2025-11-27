@@ -1,0 +1,45 @@
+.custom--red-border-block {
+  padding: 25px 18px;
+  border: 3px solid #ff5e4d;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media (min-width: 992px) {
+  .custom--red-border-block {
+    padding: 24px 33px;
+    text-align: left;
+    margin-bottom: 87px;
+  }
+}
+
+.custom--red-border-block .h4 {
+  font-size: 20px;
+  color: #ff5e4d;
+  margin-bottom: 14px;
+  line-height: 1.45;
+}
+
+@media (min-width: 992px) {
+  .custom--red-border-block .h4 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    line-height: 1.21;
+  }
+}
+
+.custom--red-border-block p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.custom--red-border-block p:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=paragraph.styles.red-border-block.css.map */

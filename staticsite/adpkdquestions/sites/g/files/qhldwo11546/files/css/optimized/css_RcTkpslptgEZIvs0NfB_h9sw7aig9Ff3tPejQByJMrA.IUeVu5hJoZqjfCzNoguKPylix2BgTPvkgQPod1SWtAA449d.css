@@ -1,0 +1,75 @@
+.rangeslider, .rangeslider__fill {
+  display: block;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.rangeslider {
+  position: relative;
+  background: #ececec;
+  width: 98%;
+  left: 1%;
+  right: 1%;
+  height: 4px;
+  cursor: pointer;
+}
+
+.rangeslider--disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+
+.rangeslider__fill {
+  background: #9ae51a;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 0;
+}
+
+.rangeslider__handle {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  top: -10px;
+  height: 23px;
+  width: 23px;
+  background-color: #9ae51a;
+}
+
+.rangeslider__handle::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #333333;
+  border-radius: 50%;
+}
+
+input[type="range"]:focus + .rangeslider .rangeslider__handle {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+  background-color: #aeea48;
+  transform: scale(1.2);
+  outline: none !important;
+}
+
+@media (min-width: 992px) {
+  input[type="range"]:focus + .rangeslider .rangeslider__handle {
+    transform: scale(1.25);
+  }
+}
+
+.rangeslider__buffer {
+  position: absolute;
+  top: 3px;
+  height: 14px;
+  background: transparent;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=component.range.css.map */

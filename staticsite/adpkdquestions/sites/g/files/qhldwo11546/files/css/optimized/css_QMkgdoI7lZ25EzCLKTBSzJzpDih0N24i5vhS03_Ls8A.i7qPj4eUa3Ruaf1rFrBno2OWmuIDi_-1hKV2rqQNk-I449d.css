@@ -1,0 +1,47 @@
+#animation-two-kidneys {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 320px;
+  height: 390px;
+  overflow-x: hidden;
+}
+
+#animation-two-kidneys .kidney-wrapper {
+  position: absolute;
+  top: 0;
+  display: block;
+}
+
+#animation-two-kidneys .kidney-wrapper.first {
+  width: 104px;
+  opacity: 0;
+}
+
+#animation-two-kidneys .kidney-wrapper.second {
+  width: 166px;
+  opacity: 0;
+}
+
+#animation-two-kidneys .img-container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+#animation-two-kidneys .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+#animation-two-kidneys .text {
+  margin-top: 10px;
+  color: #ff5e4d;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+/*# sourceMappingURL=block.two-kidneys-animation.css.map */

@@ -1,0 +1,227 @@
+.custom--video-background {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
+@media (max-width: 991.98px) {
+  .custom--video-background {
+    position: relative;
+    height: 330px;
+    margin-bottom: -15px;
+  }
+}
+
+.custom--video-background video, .custom--video-background canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  min-height: 330px;
+  max-height: 550px;
+  width: auto;
+}
+
+@media (max-width: 991.98px) {
+  .custom--video-background video, .custom--video-background canvas {
+    left: 51%;
+    max-height: 330px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .custom--video-background video, .custom--video-background canvas {
+    left: 52.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom--video-background video, .custom--video-background canvas {
+    left: 60%;
+    top: 240px;
+    height: 550px;
+  }
+}
+
+@media (min-width: 1310px) {
+  .custom--video-background video, .custom--video-background canvas {
+    top: 230px;
+    height: 500px;
+  }
+}
+
+.custom--video-background #videoBackground {
+  display: none;
+}
+
+.custom--video-background #videoBackgroundCanvas {
+  display: block;
+}
+
+.custom--video-background .video-dynamic-content-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 280px;
+}
+
+@media (min-width: 992px) {
+  .custom--video-background .video-dynamic-content-wrapper {
+    left: 15%;
+    height: 425px;
+  }
+}
+
+@media (min-width: 1310px) {
+  .custom--video-background .video-dynamic-content-wrapper {
+    height: 390px;
+  }
+}
+
+.custom--video-background #playBigButton {
+  display: none;
+  position: absolute;
+  left: calc(50% - 25px);
+  top: 35%;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background: url("../../../themes/site/themes/custom/otsuka_jynarque_adpkd_2021/assets/build/img/play.svg") no-repeat center center transparent;
+  background-size: contain;
+  border: none;
+  transition: .2s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .custom--video-background #playBigButton {
+    top: 40%;
+    background-size: contain;
+  }
+}
+
+.custom--video-background #playBigButton:hover {
+  transform: scale(1.05);
+}
+
+.custom--video-background .video-play-description,
+.custom--video-background .video-play-tip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .custom--video-background .video-play-description,
+  .custom--video-background .video-play-tip {
+    font-size: 1.125rem;
+  }
+}
+
+.custom--video-background .video-play-description span,
+.custom--video-background .video-play-tip span {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.custom--video-background .video-play-tip {
+  display: block;
+  top: 25px;
+  font-weight: normal;
+}
+
+.custom--video-background .video-play-tip span {
+  width: 315px;
+  max-width: 315px;
+}
+
+.custom--video-background #customVideoControls {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+}
+
+.custom--video-background .custom-video-controls {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .custom--video-background .custom-video-controls {
+    left: 65px;
+    bottom: 80px;
+  }
+}
+
+@media (min-width: 1310px) {
+  .custom--video-background .custom-video-controls {
+    bottom: 0;
+  }
+}
+
+.custom--video-background .custom-video-controls .controls-inner {
+  display: flex;
+}
+
+.custom--video-background .custom-video-controls .buttons-wrapper {
+  margin-right: 10px;
+}
+
+.custom--video-background .custom-video-controls .buttons-wrapper button {
+  position: relative;
+  top: -16px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background: #9ae51a no-repeat center center;
+  background-size: contain;
+  font-size: 0;
+}
+
+.custom--video-background .custom-video-controls .buttons-wrapper button:active {
+  background-color: #bfd59b;
+}
+
+.custom--video-background .custom-video-controls .buttons-wrapper button#playPause[data-state="pause"] {
+  background-image: url(../../../themes/site/themes/custom/otsuka_jynarque_adpkd_2021/assets/build/img/play_small.svg);
+}
+
+.custom--video-background .custom-video-controls .buttons-wrapper button#playPause[data-state="play"] {
+  background-image: url(../../../themes/site/themes/custom/otsuka_jynarque_adpkd_2021/assets/build/img/pause_small.svg);
+}
+
+.custom--video-background .custom-video-controls .buttons-wrapper button#playPause[data-state="reload"] {
+  background-image: url(../../../themes/site/themes/custom/otsuka_jynarque_adpkd_2021/assets/build/img/reload_small.svg);
+}
+
+.custom--video-background .custom-video-controls .progress-wrapper progress {
+  width: 100%;
+}
+
+.custom--video-background .custom-video-controls .rangeslider {
+  width: 220px;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .custom--video-background .custom-video-controls .rangeslider {
+    width: 290px;
+  }
+}
+
+/*# sourceMappingURL=paragraph.styles.video-background.css.map */

@@ -1,0 +1,38 @@
+.tooltip.show {
+  opacity: 1;
+}
+
+@media (max-width: 376.98px) {
+  .tooltip {
+    margin: 0 16px;
+    left: 0 !important;
+  }
+}
+
+.tooltip .arrow {
+  display: none;
+}
+
+.tooltip-inner {
+  font-family: SourceSansPro;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+  padding: 16px 24px;
+  border: solid 3px #ff604e;
+  background-color: #fff;
+  max-width: 330px;
+}
+
+@media (max-width: 376.98px) {
+  .tooltip-inner {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=custom-tooltip.css.map */
