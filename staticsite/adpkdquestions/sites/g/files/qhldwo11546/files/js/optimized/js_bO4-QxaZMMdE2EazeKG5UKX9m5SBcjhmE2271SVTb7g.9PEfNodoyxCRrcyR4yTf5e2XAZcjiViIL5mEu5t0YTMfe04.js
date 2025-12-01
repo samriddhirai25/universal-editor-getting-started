@@ -92,7 +92,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
         "eventUri": window.location.href
       };
       $.ajax({
-        url: '/otsuka_facebook_api/backend/event',
+        url: 'https://www.adpkdquestions.com/otsuka_facebook_api/backend/event',
         type: 'POST',
         data: JSON.stringify(arr),
         contentType: 'application/json; charset=utf-8',
