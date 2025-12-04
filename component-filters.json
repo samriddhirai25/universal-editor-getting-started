@@ -41,6 +41,8 @@
   },
   {
     "id": "quote",
-    "components": []
+    "components": [
+      "quote"
+    ]
   }
 ]
