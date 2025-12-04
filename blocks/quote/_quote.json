@@ -43,7 +43,9 @@
   "filters": [
     {
       "id": "quote",
-      "components": ["quote"]
+      "components": [
+        
+      ]
     }
   ]
 }
