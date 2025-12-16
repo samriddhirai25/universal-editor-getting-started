@@ -235,7 +235,7 @@
     ]
   },
   {
-    "id": "test-comp",
+    "id": "title",
     "fields": [
       {
         "component": "text",
