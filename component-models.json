@@ -233,5 +233,65 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "test-comp",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          },
+          {
+            "name": "h7",
+            "value": "h7"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "color",
+        "label": "Color",
+        "options": [
+          {
+            "name": "White",
+            "value": "sovm_title--color-white"
+          },
+          {
+            "name": "Black",
+            "value": "sovm_title--color-black"
+          }
+        ]
+      }
+    ]
   }
 ]

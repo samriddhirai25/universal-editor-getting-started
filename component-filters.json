@@ -15,8 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "quote"
+      "fragment"
     ]
   },
   {
@@ -42,8 +41,6 @@
   },
   {
     "id": "quote",
-    "components": [
-      "quote"
-    ]
+    "components": []
   }
 ]

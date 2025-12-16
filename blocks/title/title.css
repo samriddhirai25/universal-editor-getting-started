@@ -1,0 +1,8 @@
+/* stylelint-disable selector-class-pattern */
+.sovm_title--color-white {
+    color: #fff;
+}
+ 
+.sovm_title--color-black {
+    color: #000;
+}
