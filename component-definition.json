@@ -83,14 +83,14 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Button",
-          "id": "button",
+          "title": "Button-comp",
+          "id": "button-comp",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/button/v1/button",
                 "template": {
-                  "model": "button"
+                  "model": "button-comp"
                 }
               }
             }
