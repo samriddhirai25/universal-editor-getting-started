@@ -63,11 +63,11 @@
           "options": [
             {
               "name": "White",
-              "value": "is-light"
+              "value": "sovm_title--color-white"
             },
             {
               "name": "Black",
-              "value": "is-dark"
+              "value": "sovm_title--color-black"
             }
           ]
         }
