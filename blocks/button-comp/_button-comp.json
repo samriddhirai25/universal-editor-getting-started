@@ -1,14 +1,15 @@
+
 {
   "definitions": [
     {
-      "title": "Button-comp",
-      "id": "button-comp",
+      "title": "Button",
+      "id": "button",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/button/v1/button",
             "template": {
-              "model": "button-comp"
+              "model": "button"
             }
           }
         }
@@ -17,7 +18,7 @@
   ],
   "models": [
     {
-      "id": "button-comp",
+      "id": "button",
       "fields": [
         {
           "component": "aem-content",
@@ -39,18 +40,28 @@
           "name": "linkType",
           "label": "Type",
           "options": [
-            {
-              "name": "default",
-              "value": ""
-            },
-            {
-              "name": "primary",
-              "value": "primary"
-            },
-            {
-              "name": "secondary",
-              "value": "secondary"
-            }
+            { "name": "default", "value": "" },
+            { "name": "primary", "value": "primary" },
+            { "name": "secondary", "value": "secondary" }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "size",
+          "label": "Size",
+          "options": [
+            { "name": "Fit content", "value": "" },
+            { "name": "Full width", "value": "full" }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "icon",
+          "label": "Icon",
+          "options": [
+            { "name": "None", "value": "" },
+            { "name": "Download", "value": "download" },
+            { "name": "External", "value": "external" }
           ]
         }
       ]

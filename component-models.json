@@ -142,7 +142,7 @@
     ]
   },
   {
-    "id": "button-comp",
+    "id": "button",
     "fields": [
       {
         "component": "aem-content",
@@ -175,6 +175,40 @@
           {
             "name": "secondary",
             "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "size",
+        "label": "Size",
+        "options": [
+          {
+            "name": "Fit content",
+            "value": ""
+          },
+          {
+            "name": "Full width",
+            "value": "full"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "icon",
+        "label": "Icon",
+        "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
+          {
+            "name": "Download",
+            "value": "download"
+          },
+          {
+            "name": "External",
+            "value": "external"
           }
         ]
       }

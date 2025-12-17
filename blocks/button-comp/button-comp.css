@@ -46,3 +46,22 @@ button.secondary {
   border: 2px solid currentcolor;
   color: var(--text-color);
 }
+
+/* === Minimal additions per requirement === */
+
+/* Full-width size */
+a.button.full,
+button.full {
+  display: block;
+  width: 100%;
+}
+
+/* Optional icon spacing (assumes an inline <span class="icon"> ... ) */
+a.button[class*="download"] .icon,
+a.button[class*="external"] .icon,
+button[class*="download"] .icon,
+button[class*="external"] .icon {
+  display: inline-block;
+  margin-inline-end: 0.5em;
+  /* If your renderer injects only text, this rule is harmless. */
+}
