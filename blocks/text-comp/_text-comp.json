@@ -1,0 +1,42 @@
+{
+  "definitions": [
+    {
+      "title": "Text",
+      "id": "text",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/text/v1/text",
+            "template": {
+              "name": "text",
+              "model": "text"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "text",
+      "fields": [
+        {
+          "component": "select",
+          "name": "color",
+          "label": "Color",
+          "options": [
+            {
+              "name": "White",
+              "value": "sovm_text--color-white"
+            },
+            {
+              "name": "Black",
+              "value": "sovm_text--color-black"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

@@ -295,6 +295,26 @@
     ]
   },
   {
+    "id": "text",
+    "fields": [
+      {
+        "component": "select",
+        "name": "color",
+        "label": "Color",
+        "options": [
+          {
+            "name": "White",
+            "value": "sovm_text--color-white"
+          },
+          {
+            "name": "Black",
+            "value": "sovm_text--color-black"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "title",
     "fields": [
       {
