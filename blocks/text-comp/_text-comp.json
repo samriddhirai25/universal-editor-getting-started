@@ -1,15 +1,15 @@
 {
   "definitions": [
     {
-      "title": "Text",
-      "id": "text",
+      "title": "Text-Comp",
+      "id": "text-comp",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/text/v1/text",
             "template": {
-              "name": "text",
-              "model": "text"
+              "name": "text-comp",
+              "model": "text-comp"
             }
           }
         }
@@ -18,7 +18,7 @@
   ],
   "models": [
     {
-      "id": "text",
+      "id": "text-comp",
       "fields": [
         {
           "component": "select",
