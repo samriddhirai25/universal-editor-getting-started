@@ -1,39 +1,30 @@
+
 button {
   font: inherit;
 }
 
-/* base button */
+/* buttons */
 a.button:any-link,
 button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6em;
-
-  padding: 0.6em 1.4em;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin: 12px 0;
+  border: 2px solid transparent;
   border-radius: 2.4em;
-  border: none;
-
+  padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
+  font-style: normal;
   font-weight: 500;
   line-height: 1.25;
+  text-align: center;
   text-decoration: none;
-
   background-color: var(--link-color);
   color: var(--background-color);
-
   cursor: pointer;
-}
-
-/* icon alignment */
-.button .icon {
-  margin-left: auto;
-  display: inline-flex;
-  align-items: center;
-}
-
-/* size options */
-.button.full-width {
-  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* hover/focus */
@@ -42,10 +33,35 @@ a.button:focus,
 button:hover,
 button:focus {
   background-color: var(--link-hover-color);
+  cursor: pointer;
 }
 
 /* disabled */
-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+button:disabled,
+button:disabled:hover {
+  background-color: var(--light-color);
+  cursor: unset;
 }
+
+/* secondary */
+a.button.secondary,
+button.secondary {
+  background-color: unset;
+  border: 2px solid currentcolor;
+  color: var(--text-color);
+}
+
+/* --- Added: sizing options --- */
+.button.full-width { width: 100%; }
+.button.fit-content { width: auto; }
+
+/* --- Added: right-side icon inside button --- */
+/* Place an <svg> or <img> as the last child with class="icon" */
+.button .icon {
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  margin-left: 0.5em;      /* icon to the right of text */
+  vertical-align: middle;
+}
+
