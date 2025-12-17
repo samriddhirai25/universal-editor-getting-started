@@ -53,10 +53,6 @@
             {
               "name": "h6",
               "value": "h6"
-            },
-            {
-              "name": "h7",
-              "value": "h7"
             }
           ]
         },
@@ -67,11 +63,11 @@
           "options": [
             {
               "name": "White",
-              "value": "sovm_title--color-white"
+              "value": "is-light"
             },
             {
               "name": "Black",
-              "value": "sovm_title--color-black"
+              "value": "is-dark"
             }
           ]
         }
