@@ -41,10 +41,9 @@
           ]
         },
         {
-          "component": "aem-content",
+          "component": "reference",
           "name": "icon",
-          "label": "Icon (SVG or image)",
-          "helpText": "Optional. Provide an SVG or image to render as the button icon."
+          "label": "Icon (SVG or image)"
         }
       ]
     }
