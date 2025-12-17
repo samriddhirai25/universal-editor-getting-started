@@ -1,14 +1,14 @@
 {
   "definitions": [
     {
-      "title": "Text",
+      "title": "CustomText",
       "id": "text",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/text/v1/text",
             "template": {
-              "name": "text",
+              "name": "CustomText",
               "model": "text"
             }
           }
