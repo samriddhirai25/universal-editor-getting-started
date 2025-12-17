@@ -9,11 +9,11 @@ button {
   box-sizing: border-box;
   display: inline-flex;       /* flex for text + icon alignment */
   align-items: center;
-  gap: 0.6em;                 /* space between text and icon */
+  gap: var(--bs-btn-icon-gap, 0.6em); /* use theme gap if available */
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  border-radius: var(--bs-border-radius-lg, 2.4em); /* closer to the inspected card */
   padding: 0.7em 1.2em;       /* pill look */
   font-family: var(--body-font-family);
   font-style: normal;
@@ -30,6 +30,7 @@ button {
   white-space: normal;
 }
 
+/* Hover/focus */
 a.button:hover,
 a.button:focus,
 button:hover,
@@ -38,17 +39,24 @@ button:focus {
   cursor: pointer;
 }
 
+/* Disabled (for <button>) */
 button:disabled,
 button:disabled:hover {
   background-color: var(--light-color);
   cursor: unset;
 }
 
+/* Secondary style (closer to your inspected .cta--secondary) */
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  /* adopt your green card look */
+  --bs-btn-color: #000000;
+  --bs-btn-bg: #50FFC5;
+  --bs-btn-border-color: #50FFC5;
+
+  background-color: var(--bs-btn-bg, #50FFC5);
+  border: 1px solid var(--bs-btn-border-color, #50FFC5);
+  color: var(--bs-btn-color, #000);
 }
 
 /* Full-width */
@@ -59,33 +67,33 @@ button.full {
   justify-content: center;
 }
 
-/* --- minimal addition: pseudo-element icon --- */
+/* --- minimal addition: pseudo-element icon (no extra HTML needed) --- */
 a.button::before,
 button::before {
   content: "";
-  width: 1.25em;
-  height: 1.25em;
+  width: var(--bs-btn-icon-width, 1.25rem);
+  height: var(--bs-btn-icon-height, 1.25rem);
   background-image: var(--button-icon-url); /* set per button */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   flex: 0 0 auto;
-  margin-right: 0.6em; /* spacing for left-side icon */
+  margin-right: var(--bs-btn-icon-gap, 0.6em); /* left-side spacing */
 }
 
-/* Right-side icon (optional) */
+/* Right-side icon (matches your inspected cta--icon-right behavior) */
 .button.icon-right::before {
-  order: 2;
+  order: 2;                                     /* icon after text */
   margin-right: 0;
-  margin-left: 0.6em; /* spacing for right-side icon */
+  margin-left: var(--bs-btn-icon-gap, 0.6em);   /* right-side spacing */
 }
 
-/* You can keep these if your markup has .icon/.text; they won't hurt */
+/* If your markup includes .icon/.text, keep these; they won't conflict */
 .button .icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;             /* prevent icon from shrinking */
+  flex: 0 0 auto; /* prevent icon from shrinking */
 }
 
 .button.icon-right .text { order: 1; }
