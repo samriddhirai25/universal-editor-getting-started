@@ -1,3 +1,4 @@
+
 button { 
   font: inherit; 
 }
@@ -23,9 +24,10 @@ button {
   background-color: var(--link-color);
   color: var(--background-color);
   cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+
+  /* allow icon to render properly */
+  overflow: visible;
+  white-space: normal;
 }
 
 a.button:hover,
@@ -62,6 +64,7 @@ button.full {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;             /* prevent icon from shrinking */
 }
 
 /* Position control */
@@ -71,9 +74,17 @@ button.full {
 .button.icon-left .icon { order: 1; }
 .button.icon-left .text { order: 2; }
 
-/* Optional: normalize SVG/icon size */
+/* Normalize SVG/icon size */
 .button .icon svg,
 .button .icon img {
   width: 1.25em;
   height: 1.25em;
+}
+
+/* Ensure label truncates without hiding the icon */
+.button .text {
+  min-width: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
