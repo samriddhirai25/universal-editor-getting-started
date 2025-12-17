@@ -194,21 +194,23 @@
         ]
       },
       {
-        "component": "select",
+        "component": "aem-content",
         "name": "icon",
-        "label": "Icon",
+        "label": "Icon (SVG or image)",
+        "helpText": "Optional. Provide an SVG or image to render as the button icon."
+      },
+      {
+        "component": "select",
+        "name": "iconPosition",
+        "label": "Icon position",
         "options": [
           {
-            "name": "None",
-            "value": ""
+            "name": "Right",
+            "value": "icon-right"
           },
           {
-            "name": "Download",
-            "value": "download"
-          },
-          {
-            "name": "External",
-            "value": "external"
+            "name": "Left",
+            "value": "icon-left"
           }
         ]
       }

@@ -1,17 +1,19 @@
-button {
-  font: inherit;
+button { 
+  font: inherit; 
 }
 
 /* buttons */
 a.button:any-link,
 button {
   box-sizing: border-box;
-  display: inline-block;
+  display: inline-flex;       /* flex for text + icon alignment */
+  align-items: center;
+  gap: 0.6em;                 /* space between text and icon */
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
   border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  padding: 0.7em 1.2em;       /* pill look */
   font-family: var(--body-font-family);
   font-style: normal;
   font-weight: 500;
@@ -47,21 +49,31 @@ button.secondary {
   color: var(--text-color);
 }
 
-/* === Minimal additions per requirement === */
-
-/* Full-width size */
+/* Full-width */
 a.button.full,
 button.full {
-  display: block;
+  display: flex;
   width: 100%;
+  justify-content: center;
 }
 
-/* Optional icon spacing (assumes an inline <span class="icon"> ... ) */
-a.button[class*="download"] .icon,
-a.button[class*="external"] .icon,
-button[class*="download"] .icon,
-button[class*="external"] .icon {
-  display: inline-block;
-  margin-inline-end: 0.5em;
-  /* If your renderer injects only text, this rule is harmless. */
+/* Generic icon container (works with any SVG or image) */
+.button .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Position control */
+.button.icon-right .text { order: 1; }
+.button.icon-right .icon { order: 2; }
+
+.button.icon-left .icon { order: 1; }
+.button.icon-left .text { order: 2; }
+
+/* Optional: normalize SVG/icon size */
+.button .icon svg,
+.button .icon img {
+  width: 1.25em;
+  height: 1.25em;
 }
