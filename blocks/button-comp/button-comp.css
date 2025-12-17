@@ -59,7 +59,28 @@ button.full {
   justify-content: center;
 }
 
-/* Generic icon container (works with any SVG or image) */
+/* --- minimal addition: pseudo-element icon --- */
+a.button::before,
+button::before {
+  content: "";
+  width: 1.25em;
+  height: 1.25em;
+  background-image: var(--button-icon-url); /* set per button */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  flex: 0 0 auto;
+  margin-right: 0.6em; /* spacing for left-side icon */
+}
+
+/* Right-side icon (optional) */
+.button.icon-right::before {
+  order: 2;
+  margin-right: 0;
+  margin-left: 0.6em; /* spacing for right-side icon */
+}
+
+/* You can keep these if your markup has .icon/.text; they won't hurt */
 .button .icon {
   display: inline-flex;
   align-items: center;
@@ -67,21 +88,18 @@ button.full {
   flex: 0 0 auto;             /* prevent icon from shrinking */
 }
 
-/* Position control */
 .button.icon-right .text { order: 1; }
 .button.icon-right .icon { order: 2; }
 
 .button.icon-left .icon { order: 1; }
 .button.icon-left .text { order: 2; }
 
-/* Normalize SVG/icon size */
 .button .icon svg,
 .button .icon img {
   width: 1.25em;
   height: 1.25em;
 }
 
-/* Ensure label truncates without hiding the icon */
 .button .text {
   min-width: 0;
   white-space: nowrap;
