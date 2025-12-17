@@ -189,15 +189,15 @@
           }
         },
         {
-          "title": "Text-Comp",
-          "id": "text-comp",
+          "title": "Text",
+          "id": "text",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/text/v1/text",
                 "template": {
-                  "name": "text-comp",
-                  "model": "text-comp"
+                  "name": "text",
+                  "model": "text"
                 }
               }
             }

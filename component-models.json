@@ -295,7 +295,7 @@
     ]
   },
   {
-    "id": "text-comp",
+    "id": "text",
     "fields": [
       {
         "component": "select",
