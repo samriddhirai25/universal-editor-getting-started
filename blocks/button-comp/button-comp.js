@@ -9,6 +9,10 @@ export default function decorate(block) {
   const link = contentWrapper.querySelector('a');
 
   if (!link || !text) return;
+  const em = link.closest('em');
+  if (em) {
+    em.replaceWith(link);
+  }
 
   const button = document.createElement('a');
   button.href = link.href;
