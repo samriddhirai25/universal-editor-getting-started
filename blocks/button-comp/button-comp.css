@@ -51,20 +51,10 @@ button.secondary {
 .button.full-width { width: 100%; }
 .button.fit-content { width: auto; }
 
-/* Allow icon + text alignment */
-.button { display: inline-flex; align-items: center; }
-
-.icon-wrapper { display: inline-flex; align-items: center; }
-
-.icon {
-  display: inline-block;
+.button .icon {
+  display: inline-flex;
   width: 1em;
   height: 1em;
+  margin-left: 0.5em;      
   vertical-align: middle;
 }
-
-/* Default: icon on the right */
-.icon-wrapper.icon--right { margin-left: 0.5em; margin-right: 0; }
-
-/* Left-positioned icon */
-.icon-wrapper.icon--left { margin-right: 0.5em; margin-left: 0; }
