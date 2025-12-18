@@ -42,7 +42,7 @@
         },
         {
           "component": "aem-content",
-          "name": "icon",
+          "name": "btn-icon",
           "label": "Icon (SVG or image)"
         }
       ]

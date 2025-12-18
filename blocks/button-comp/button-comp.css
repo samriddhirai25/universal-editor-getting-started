@@ -51,7 +51,7 @@ button.secondary {
 .button.full-width { width: 100%; }
 .button.fit-content { width: auto; }
 
-.button .icon {
+.button .btn-icon {
   display: inline-flex;
   width: 1em;
   height: 1em;
