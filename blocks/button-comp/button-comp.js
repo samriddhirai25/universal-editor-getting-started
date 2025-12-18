@@ -1,34 +1,22 @@
 export default function decorate(block) {
-  const rows = [...block.children];
+  const container = block.querySelector('.button-container');
+  if (!container) return;
 
-  const iconWrapper = rows[0];
-  const contentWrapper = rows[1];
+  const link = container.querySelector('a.button');
+  const icon = container.querySelector('img');
 
-  const icon = iconWrapper.querySelector('img');
-  const text = contentWrapper.querySelector('p');
-  const link = contentWrapper.querySelector('a');
+  if (!link) return;
 
-  if (!link || !text) return;
-  const em = link.closest('em');
-  if (em) {
-    em.replaceWith(link);
-  }
+  // Wrap contents into flex button
+  const text = document.createElement('span');
+  text.textContent = link.textContent;
 
-  const button = document.createElement('a');
-  button.href = link.href;
-  button.className = 'btn';
+  link.textContent = '';
+  link.append(text);
 
-  if (icon) {
+  // Add icon if authored
+  if (icon && icon.src) {
     icon.classList.add('btn-icon');
-    button.append(icon);
+    link.prepend(icon);
   }
-
-  const span = document.createElement('span');
-  span.textContent = text.textContent;
-  button.append(span);
-
-  block.textContent = '';
-  block.append(button);
 }
-
- 
