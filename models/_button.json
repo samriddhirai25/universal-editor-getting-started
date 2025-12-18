@@ -53,6 +53,12 @@
             }
           ]
         }
+        ,
+        {
+          "component": "aem-content",
+          "name": "icon",
+          "label": "Icon (SVG or image)"
+        }
       ]
     }
   ]

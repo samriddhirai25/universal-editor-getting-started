@@ -1,30 +1,57 @@
-export default function decorate(block) {
-  const rows = [...block.children];
+document.addEventListener('DOMContentLoaded', function () {
+  // Enhance buttons with icons. Supports:
+  // - data-icon="/path/to/icon.svg" (image URL or data URL)
+  // - data-icon-html="<svg>...</svg>" (inline SVG/HTML, sanitized with DOMPurify if available)
+  // - data-icon-position="left|right" (defaults to right)
 
-  const iconWrapper = rows[0];
-  const contentWrapper = rows[1];
+  const hasPurify = typeof DOMPurify !== 'undefined';
 
-  const icon = iconWrapper.querySelector('img');
-  const text = contentWrapper.querySelector('p');
-  const link = contentWrapper.querySelector('a');
+  document.querySelectorAll('.button').forEach(function (btn) {
+    // don't duplicate
+    if (btn.querySelector('.icon-wrapper')) return;
 
-  if (!link || !text) return;
+    const iconUrl = btn.getAttribute('data-icon');
+    const iconHtml = btn.getAttribute('data-icon-html');
+    const position = (btn.getAttribute('data-icon-position') || 'right').toLowerCase();
 
-  const button = document.createElement('a');
-  button.href = link.href;
-  button.className = 'btn';
+    if (!iconUrl && !iconHtml) return;
 
-  if (icon) {
-    icon.classList.add('btn-icon');
-    button.append(icon);
-  }
+    const wrapper = document.createElement('span');
+    wrapper.className = 'icon-wrapper ' + (position === 'left' ? 'icon--left' : 'icon--right');
 
-  const span = document.createElement('span');
-  span.textContent = text.textContent;
-  button.append(span);
+    // If inline HTML provided, sanitize and insert
+    if (iconHtml) {
+      try {
+        wrapper.innerHTML = hasPurify ? DOMPurify.sanitize(iconHtml) : iconHtml;
+      } catch (e) {
+        console.warn('Icon HTML sanitization failed', e);
+        wrapper.textContent = '';
+      }
+      if (position === 'left') btn.insertBefore(wrapper, btn.firstChild);
+      else btn.appendChild(wrapper);
+      return;
+    }
 
-  block.textContent = '';
-  block.append(button);
-}
+    // If the data contains raw HTML (e.g. "<svg>...") treat as HTML too
+    if (iconUrl && /<[^>]+>/.test(iconUrl)) {
+      try {
+        wrapper.innerHTML = hasPurify ? DOMPurify.sanitize(iconUrl) : iconUrl;
+      } catch (e) {
+        console.warn('Icon HTML sanitization failed', e);
+        wrapper.textContent = '';
+      }
+      if (position === 'left') btn.insertBefore(wrapper, btn.firstChild);
+      else btn.appendChild(wrapper);
+      return;
+    }
 
- 
+    // Otherwise treat as an image URL (supports data: URLs as well)
+    const img = document.createElement('img');
+    img.className = 'icon';
+    img.src = iconUrl;
+    img.alt = '';
+    wrapper.appendChild(img);
+    if (position === 'left') btn.insertBefore(wrapper, btn.firstChild);
+    else btn.appendChild(wrapper);
+  });
+});
