@@ -27,7 +27,6 @@ button {
   white-space: nowrap;
 }
 
-/* hover/focus */
 a.button:hover,
 a.button:focus,
 button:hover,
@@ -36,14 +35,12 @@ button:focus {
   cursor: pointer;
 }
 
-/* disabled */
 button:disabled,
 button:disabled:hover {
   background-color: var(--light-color);
   cursor: unset;
 }
 
-/* secondary */
 a.button.secondary,
 button.secondary {
   background-color: unset;
@@ -51,17 +48,13 @@ button.secondary {
   color: var(--text-color);
 }
 
-/* --- Added: sizing options --- */
 .button.full-width { width: 100%; }
 .button.fit-content { width: auto; }
 
-/* --- Added: right-side icon inside button --- */
-/* Place an <svg> or <img> as the last child with class="icon" */
 .button .icon {
   display: inline-flex;
   width: 1em;
   height: 1em;
-  margin-left: 0.5em;      /* icon to the right of text */
+  margin-left: 0.5em;      
   vertical-align: middle;
 }
-
