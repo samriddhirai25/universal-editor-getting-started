@@ -1,0 +1,16 @@
+
+<!-- button.html -->
+<sly
+  data-sly-use.buttonModel="com.myproj.components.models.ButtonModel"
+  data-sly-test="${buttonModel}">
+
+  <!--
+    Classes:
+    - base: "button"
+    - type: "primary"/"secondary" (optional)
+    - size: model 'full' -> CSS 'full-width', otherwise 'fit-content'
+  -->
+  <a
+    class="button ${buttonModeldel.linkText}
+  </a>
+</sly>
